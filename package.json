@@ -6,9 +6,13 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^4.6.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-card-flip": "^1.1.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.2.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -23,6 +27,18 @@
       "react-app/jest"
     ]
   },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "indent": [
+      2,
+      "tab"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1"
   }
 }
