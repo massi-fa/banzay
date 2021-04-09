@@ -25,6 +25,7 @@ const Header = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  box-shadow: rgb(20 20 20) 2px 2px 30px 0px;
 `;
 const App = () =>{
   return ( 
