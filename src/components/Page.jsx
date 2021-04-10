@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import instagram from '../res/instagram.png';
 import tiktok from '../res/tiktok.png';
-import paypal from '../res/paypal.png';
+
 import TikTokcmp from './TikTokcmp';
 
 const Container = styled.div`
@@ -11,6 +11,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 `;
+
+/* import paypal from '../res/paypal.png';
+
 const Block = styled.div`
   margin-top: 50px;
 `;
@@ -48,10 +51,7 @@ const ContainerLink = styled.div`
   width: 17rem;
   padding: 10px;
 `;
-const ImageLink = styled.img`
-  height: 5rem;
-  margin: auto;
-`;
+
 const ImageLinkSmall = styled.img`
   height: 2rem;
   margin: auto;
@@ -62,11 +62,14 @@ const CardCit = styled.div`
   width: 60%;
   margin: 30px auto auto auto;
   border-radius: 15px;
-`;
+`;*/
 const LinkContainer = styled.div`
   margin: 30px auto auto auto;
 `;
-
+const ImageLink = styled.img`
+  height: 5rem;
+  margin: auto;
+`;
 const Page = () => ( 
   <Container>
     <TikTokcmp />

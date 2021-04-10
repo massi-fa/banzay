@@ -9,11 +9,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+/*
 const H1  = styled.h1`
   font-size: 0.8rem;
   margin: auto;
   color:white;
 `;
+*/
 const TikTokcmp = () => {
   const [data, setData] = useState(null)
   const fetchURL = "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@banzay_tv/video/6949098772857228549"
