@@ -17,12 +17,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 const Container = styled.div`
-  background-image: url(${sfondo});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
+  background-color: #202434;
   height: 100%;
   width: 100%;
+  width: 100%;
+  overflow-y: scroll;
 `;
 const StyledLogo = styled.img`
   max-height: 50px;
@@ -36,14 +35,14 @@ const Decoration =  styled.img`
   transform: rotate(0.5turn);
 `;
 const Header = styled.div`
-  background-color:rgba(237, 74, 84, 0.8);
+  background-color:#fb4454;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-radius: 0px 0px 5px 5px;
   width: 100%;
   height: 55px;
-  border-radius: 50% / 100%;
+  border-radius: 300% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   transform: rotate(0.5turn);
