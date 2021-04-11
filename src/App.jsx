@@ -1,4 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components/macro';
 import BottomCprt from './components/BottomCprt';
 import Header from './components/Header';
@@ -11,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     height: 100%;
-    width: 100%;
     font-family: 'Dela Gothic One', cursive;
   }
   #root {
@@ -23,7 +27,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,9 +37,18 @@ const App = () =>{
   return (  
     <Container>
       <GlobalStyle/>
-      <Header />
-      <Home />
-      <Info />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/informations">
+            <Info />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+          
+        </Switch>
+      </Router>  
       <BottomCprt />
     </Container>
   )

@@ -42,11 +42,11 @@ const TikTokContainer = styled.div`
 const Home = () => ( 
   <Container>
     <TikTokContainer>
-      <H1>Ti sei perso il mio ultimo video !?</H1>
+      <H1>😈Ti sei perso il mio😈<br/>😈ultimo video !?😈 </H1>
       <TikTokcmp />
     </TikTokContainer>
     <LinkContainer>
-      <H1>Ricordati che dovresti seguimi ovunque !?</H1>
+      <H1>😈Ricordati che dovresti😈<br/>😈seguimi ovunque !?😈</H1>
       <ButtonContainer>
         <Button href='https://vm.tiktok.com/ZMemUaYLF/'>
           <ImageLink src={tiktok} />

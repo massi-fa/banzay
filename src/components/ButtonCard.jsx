@@ -33,7 +33,7 @@ const B = styled.span`
 `;
 const ButtonCard = ({ text1, text2, image}) =>(
   <Support>
-    <H1>{text1}<br/><B>{text2}</B><br/>!?</H1>
+    <H1>💣{text1}💣<br/>💣<B>{text2}</B>💣<br/>💣!?💣</H1>
     <SupportImage src={image} />
   </Support>
 );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import styled from 'styled-components/macro';
 import logo from '../res/logo.png';
 import decoration from '../res/tnt.svg';
@@ -7,11 +8,10 @@ import info from '../res/info.svg';
 
 const Container = styled.div`
   position: absolute;
-  width: 100%;
+  width:100%;
 `;
 const ContainerButton = styled.div`
   background-color: #202434;
-  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   display: flex;
@@ -34,6 +34,12 @@ const NBImage = styled.img`
   margin-right: 5px;
   z-index: 1;
 `;
+const ButtonN = styled.button`
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 1;
+`;
 const Button = styled.button`
   background-color: transparent;
   border: none;
@@ -52,15 +58,21 @@ const Decoration =  styled.img`
   margin: auto 0px auto auto;
 `;
 const Header = () =>{
+  const history = useHistory();
+	const handleClick = () =>{
+    history.push("/informations")
+	};
   const [NavBar,setNavBar] = useState(true);
   const OpenClose = () =>{
     setNavBar(!NavBar)
     console.log(NavBar);
-  }
+  };
   return(
     <Container>
       <ContainerNavBar condition={NavBar}>
-        <NBImage src={info} />
+        <ButtonN onClick={handleClick}>
+          <NBImage src={info} />
+        </ButtonN>
       </ContainerNavBar>
       <ContainerButton>
         <Button onClick={OpenClose}>
