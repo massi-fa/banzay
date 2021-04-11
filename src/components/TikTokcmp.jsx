@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 import screen from '../res/screen.PNG';
 
 const Container = styled.div`
-  margin: 20px auto auto auto;
+  margin: 0px auto auto auto;
   border: 1px solid;
   background-color: #fb4454;
   border-radius: 15px;
@@ -12,6 +12,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
+  background-color: transparent;
 `;
 const Image = styled.img`
   height: 16rem;
@@ -20,7 +21,7 @@ const Image = styled.img`
 `;
 const H1  = styled.h1`
   font-size: 0.8rem;
-  margin: auto;
+  margin: 5px auto;
   color:white;
   text-align: center;
 `;
@@ -33,11 +34,17 @@ const TikTokcmp = () => {
 
   useEffect(() => {
     getData().then((data) => setData(data))
-  }, [])
+  }, []);
+  const Slice = (stringa) =>{
+    const pos = stringa?.indexOf('#')
+    const res = stringa?.slice(0, pos);
+    return(res);
+  }
+  const title = data?.title;
   return (
     <Container>
       <Image src={screen}/>
-      <H1>{data?.title}</H1>
+      <H1>{Slice(title)}</H1>
     </Container>
   )
 };
