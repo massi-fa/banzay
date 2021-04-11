@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components/macro';
 import BottomCprt from './components/BottomCprt';
 import Header from './components/Header';
 import Page from './components/Page';
-import sfondo from './res/background.svg';
 
 const GlobalStyle = createGlobalStyle`
   html {
