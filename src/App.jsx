@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components/macro';
 import BottomCprt from './components/BottomCprt';
 import Header from './components/Header';
 import Home from './components/Home';
+import Info from './components/Info';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -34,6 +35,7 @@ const App = () =>{
       <GlobalStyle/>
       <Header />
       <Home />
+      <Info />
       <BottomCprt />
     </Container>
   )
