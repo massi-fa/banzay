@@ -5,10 +5,8 @@ import screen from '../res/screen.PNG';
 
 const Container = styled.div`
   margin: 0px auto auto auto;
-  border: 1px solid;
   background-color: #fb4454;
-  border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   width: 60%;

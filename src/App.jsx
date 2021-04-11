@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styled, { createGlobalStyle } from 'styled-components/macro';
 import BottomCprt from './components/BottomCprt';
 import Header from './components/Header';
-import Page from './components/Page';
+import Home from './components/Home';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     height: 100%;
+    width: 100%;
     font-family: 'Dela Gothic One', cursive;
   }
   #root {
@@ -32,7 +33,7 @@ const App = () =>{
     <Container>
       <GlobalStyle/>
       <Header />
-      <Page />
+      <Home />
       <BottomCprt />
     </Container>
   )
