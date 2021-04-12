@@ -15,7 +15,7 @@ const Support = styled.button`
   border: 0px;
 `;
 const H1 = styled.h1`
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin: auto;
   color: #202434;
   text-align: center;
@@ -26,27 +26,25 @@ const SupportImage = styled.img`
   margin: auto 10px auto;
 `;
 const B = styled.span`
-  font-size: 1em;
+  font-size: 1.3em;
   margin: auto;
   color: white;
   text-align: center;
   margin: auto;
   color: white;
 `;
-const ButtonCard = ({ text1, text2, image}) =>{
-  const fun= () =>(window.location.href = 'whatsapp://send?text=https://gallant-elion-2fae74.netlify.app/ Ciao mi chiamo banzay e faccio i tik tok. Se vuoi vieni a trovarmi qui  ');
-  return(
-    <Support onClick={fun}>
-        <H1>💣{text1}💣<br/>💣<B>{text2}</B>💣<br/>💣!?💣</H1>
-      <SupportImage src={image} />
-    </Support>
-  );
-}
+const ButtonCard = ({ text1, text2, image, fun}) =>(
+  <Support onClick={fun}>
+      <H1>{text1}<br/><B>{text2}</B><br/>!?</H1>
+    <SupportImage src={image} />
+  </Support>
+);
 
 ButtonCard.propTypes = {
   text1: PropTypes.string.isRequired,
   text2: PropTypes.string.isRequired,
   image: PropTypes.node.isRequired,
+  fun: PropTypes.func,
 };
 
 export default ButtonCard;

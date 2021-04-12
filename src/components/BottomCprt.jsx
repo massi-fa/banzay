@@ -5,7 +5,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 const H1 = styled.h1`
   color: white;

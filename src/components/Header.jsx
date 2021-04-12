@@ -9,6 +9,9 @@ import info from '../res/info.svg';
 const Container = styled.div`
   position: absolute;
   width:100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
 `;
 const ContainerButton = styled.div`
   background-color: #202434;
@@ -68,7 +71,7 @@ const Header = () =>{
     console.log(NavBar);
   };
   return(
-    <Container>
+    <Container onClick={OpenClose}>
       <ContainerNavBar condition={NavBar}>
         <ButtonN onClick={handleClick}>
           <NBImage src={info} />

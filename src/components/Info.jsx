@@ -44,8 +44,6 @@ const Info = () =>{
       <BoxInfo>
         <H1>😈Email😈</H1>
         <H11>💣alby777@gmail.com💣</H11>
-        <H1>😈Telefono😈</H1>
-        <H11>💣3317824586💣</H11>
       </BoxInfo>
       <Button onClick={handleClickBack}>
         <Image src={back} />

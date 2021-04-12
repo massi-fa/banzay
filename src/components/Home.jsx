@@ -39,26 +39,29 @@ const ImageLink = styled.img`
 const TikTokContainer = styled.div`
   padding: 5px;
 `;
-const Home = () => ( 
-  <Container>
-    <TikTokContainer>
-      <H1>😈Ti sei perso il mio😈<br/>😈ultimo video !?😈 </H1>
-      <TikTokcmp />
-    </TikTokContainer>
-    <LinkContainer>
-      <H1>😈Ricordati che dovresti😈<br/>😈seguimi ovunque !?😈</H1>
-      <ButtonContainer>
-        <Button href='https://vm.tiktok.com/ZMemUaYLF/'>
-          <ImageLink src={tiktok} />
-        </Button>
-        <Button href='https://instagram.com/banzai2k'>
-          <ImageLink src={instagram} />
-        </Button>
-      </ButtonContainer>
-    </LinkContainer>
-    <ButtonCard text1="Perchè non" text2="mi condividi" image={whatsapp} />
-    <ButtonCard text1="Se proprio" text2="mi ami" image={paypal} />
-  </Container>
-);
+const Home = () => {
+  const Whatsfun= () =>(window.location.href = 'whatsapp://send?text=https://gallant-elion-2fae74.netlify.app/ Ciao mi chiamo banzay e faccio i tik tok. Se vuoi vieni a trovarmi qui  ');
+  return(
+    <Container>
+        <TikTokContainer>
+          <H1>😈Ti sei perso il mio😈<br/>😈ultimo video !?😈 </H1>
+          <TikTokcmp />
+        </TikTokContainer>
+        <LinkContainer>
+          <H1>😈Ricordati di😈<br/>😈seguimi ovunque !?😈</H1>
+          <ButtonContainer>
+            <Button href='https://vm.tiktok.com/ZMemUaYLF/'>
+              <ImageLink src={tiktok} />
+            </Button>
+            <Button href='https://instagram.com/banzai2k'>
+              <ImageLink src={instagram} />
+            </Button>
+          </ButtonContainer>
+        </LinkContainer>
+        <ButtonCard text1="Perchè non" text2="mi condividi" image={whatsapp} fun={Whatsfun}/>
+        <ButtonCard text1="Se proprio" text2="mi ami" image={paypal} />
+      </Container>
+  );
+};
 
 export default Home;
