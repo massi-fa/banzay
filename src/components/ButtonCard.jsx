@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
-const Support = styled.div`
+const Support = styled.button`
   padding: 10px;
   border-radius: 20px;
   background-color: #fb4454;
@@ -11,6 +11,8 @@ const Support = styled.div`
   flex-direction: row;
   height: 7rem;
   width: 70%;
+  outline: none;
+  border: 0px;
 `;
 const H1 = styled.h1`
   font-size: 0.9em;
@@ -31,12 +33,15 @@ const B = styled.span`
   margin: auto;
   color: white;
 `;
-const ButtonCard = ({ text1, text2, image}) =>(
-  <Support>
-    <H1>💣{text1}💣<br/>💣<B>{text2}</B>💣<br/>💣!?💣</H1>
-    <SupportImage src={image} />
-  </Support>
-);
+const ButtonCard = ({ text1, text2, image}) =>{
+  const fun= () =>(window.location.href = 'whatsapp://send?text=https://gallant-elion-2fae74.netlify.app/ Ciao mi chiamo banzay e faccio i tik tok. Se vuoi vieni a trovarmi qui  ');
+  return(
+    <Support onClick={fun}>
+        <H1>💣{text1}💣<br/>💣<B>{text2}</B>💣<br/>💣!?💣</H1>
+      <SupportImage src={image} />
+    </Support>
+  );
+}
 
 ButtonCard.propTypes = {
   text1: PropTypes.string.isRequired,
