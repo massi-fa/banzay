@@ -9,6 +9,7 @@ const Container = styled.div`
 `;
 const H1 = styled.h1`
   color: white;
+  color:#e74c3c;
   font-size:0.5rem;
   margin: 5px;
 `;

@@ -31,6 +31,8 @@ const ButtonContainer = styled.div`
 `;
 const Button = styled.a`
   background-color: transparent;
+  outline: none;
+  text-decoration: none
 `;
 const ImageLink = styled.img`
   height: 4rem;
@@ -48,7 +50,7 @@ const Home = () => {
           <TikTokcmp />
         </TikTokContainer>
         <LinkContainer>
-          <H1>😈Ricordati di😈<br/>😈seguimi ovunque !?😈</H1>
+          <H1>😈Ricordati di😈<br/>😈seguirmi ovunque !?😈</H1>
           <ButtonContainer>
             <Button href='https://vm.tiktok.com/ZMemUaYLF/'>
               <ImageLink src={tiktok} />
@@ -59,7 +61,9 @@ const Home = () => {
           </ButtonContainer>
         </LinkContainer>
         <ButtonCard text1="Perchè non" text2="mi condividi" image={whatsapp} fun={Whatsfun}/>
-        <ButtonCard text1="Se proprio" text2="mi ami" image={paypal} />
+        <Button href="https://www.paypal.com/paypalme/BanzayTv">
+          <ButtonCard text1="Se proprio" text2="mi ami" image={paypal}/>
+        </Button>
       </Container>
   );
 };

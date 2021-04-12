@@ -5,14 +5,17 @@ import PropTypes from 'prop-types';
 const Support = styled.button`
   padding: 10px;
   border-radius: 20px;
-  background-color: #fb4454;
+  background-color: #e74c3c;
   margin: 0px auto 15px auto;
   display: flex;
   flex-direction: row;
   height: 7rem;
-  width: 70%;
   outline: none;
   border: 0px;
+  width: 20rem;
+  @media all and (max-width: 480px) {
+    width: 70%;
+  }
 `;
 const H1 = styled.h1`
   font-size: 1.1em;
