@@ -59,6 +59,7 @@ const StyledLogo = styled.img`
 const Decoration =  styled.img`
   max-height: 35px;
   margin: auto 0px auto auto;
+  z-index: 3;
 `;
 const Header = () =>{
   const history = useHistory();
