@@ -9,6 +9,7 @@ import BottomCprt from './components/BottomCprt';
 import Header from './components/Header';
 import Home from './components/Home';
 import Info from './components/Info';
+import pattern from './res/pattern.svg';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Container = styled.div`
   background-color: #202434;
+  //background-image:url(${pattern});
   height: 100%;
   width: 100%;
   width: 100%;

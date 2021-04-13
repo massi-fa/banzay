@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ButtonCard from './ButtonCard';
 import instagram from '../res/instagram.svg';
 import tiktok from '../res/tiktok.png';
 import paypal from '../res/paypal.svg';
-import TikTokcmp from './TikTokcmp';
 import whatsapp from '../res/whatsapp.svg';
+import TikTok from './TikTokComponent';
 
 const Container = styled.div`
   display: flex;
@@ -47,7 +47,7 @@ const Home = () => {
     <Container>
         <TikTokContainer>
           <H1>😈Ti sei perso il mio😈<br/>😈ultimo video !?😈 </H1>
-          <TikTokcmp />
+          <TikTok />
         </TikTokContainer>
         <LinkContainer>
           <H1>😈Ricordati di😈<br/>😈seguirmi ovunque !?😈</H1>
