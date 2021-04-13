@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
   #root {
     height: 100%;
   }
+  iframe{
+    width: 90% !important;
+    margin: auto;
+  }
 `;
 const Container = styled.div`
   background-color: #202434;

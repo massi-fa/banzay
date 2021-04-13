@@ -2,7 +2,15 @@ import styled from 'styled-components/macro';
 import { TikTok } from 'react-tiktok';
 
 const Container = styled.div`
-  background-color: #202434;
+  border: 2px solid;
+  border-color: white;
+  background-color: white;
+  border-radius: 15px;
+  width: 25rem;
+  margin: 10px auto;
+  @media all and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const TikTokComponent = () => (
